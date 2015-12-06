@@ -1,4 +1,5 @@
 name: free_poll
+description: Free Poll Website
 version: 0.0.1
 dependencies:
   angular2: 2.0.0-alpha.47
