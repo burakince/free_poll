@@ -12,8 +12,9 @@ import 'package:free_poll/friends_service.dart';
             {{ name }}
           </li>
         </ul>
+        <p *ng-if="friendNames.length > 3">You have many friends!</p>
       ''',
-    directives: const [NgFor])
+    directives: const [NgFor, NgIf])
 class ListComponent {
   List<String> friendNames;
 
