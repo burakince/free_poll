@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Customer Form</h1>
+    {{diagnostic}}
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" required
+                   [ng-model]="customer.name"
+                   (ng-model-change)="customer.name = $event" >
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" [(ng-model)]="customer.surname" >
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" required [(ng-model)]="customer.gender" >
+                <option *ng-for="#g of genders" [value]="g">{{g}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
