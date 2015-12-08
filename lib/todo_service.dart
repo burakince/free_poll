@@ -10,7 +10,7 @@ import 'package:uuid/uuid.dart' show Uuid;
 class TodoService {
   List<String> todos = ['Eat breakfast', 'Walk dog', 'Breathe', 'Learn Angular'];
 
-  List<Todo> newTodos = ['Eat breakfast', 'Walk dog', 'Breathe', 'Learn Angular'];
+  List<Todo> newTodos = [];
   String filter;
 
   Storage get store => window.localStorage;
